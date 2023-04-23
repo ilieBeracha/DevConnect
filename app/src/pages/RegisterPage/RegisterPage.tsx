@@ -29,6 +29,9 @@ function RegisterPage(): JSX.Element {
 
   return (
     <div className="RegisterPage">
+      <div className="oathSecDiv">
+        
+      </div>
       <form onSubmit={handleSubmit(registerForm)}>
         <div className="labelInputDiv">
           <label htmlFor="">First Name: </label>

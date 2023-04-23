@@ -23,15 +23,26 @@
 
 .HeaderNav a{
     color: var(--secColor);
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 
 .HeaderNav a:hover{
+    position: relative;
+    bottom: 3px;
     color: var(--secColor);
 }
+
 
 #registerAnchor{
     border: 1px solid var(--secColor);
     padding: 5px;
     border-radius: 10px;
 }
+
+#registerAnchor:hover{
+    background-color: var(--secColor);
+    color: var(--mainColor);
+}
+
+
 
