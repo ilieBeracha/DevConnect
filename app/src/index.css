@@ -14,7 +14,8 @@
   -webkit-text-size-adjust: 100%;
 
   --mainColor:#F2F2F2;
-  --secColor:#D65844;
+  /* --secColor:#D65844; */
+  --secColor:#EE4239;
 }
 
 h1,h2,h3,h4,h5,h6{

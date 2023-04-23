@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import "./LandingPage.css";
 import LoginPage from "../LoginPage/LoginPage";
 import RegisterPage from "../RegisterPage/RegisterPage";
 import Header from "../../Components/Header/Header";
 import LandingPageContent from "../LandingPageContent/LandingPageContent";
+import "./LandingPage.css";
 
 function LandingPage(): JSX.Element {
     return (
