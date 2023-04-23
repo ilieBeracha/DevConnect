@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import { Route, Routes } from "react-router-dom";
-import Header from "./Components/Header/Header";
 
 function App() {
   const authSlice = useSelector((state: any) => state.auth);

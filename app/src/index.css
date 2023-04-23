@@ -16,6 +16,12 @@
   --mainColor:#F2F2F2;
   /* --secColor:#D65844; */
   --secColor:#EE4239;
+
+  color: black;
+}
+
+input,select{
+  background-color: #ccc;
 }
 
 h1,h2,h3,h4,h5,h6{

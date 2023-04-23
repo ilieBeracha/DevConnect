@@ -1,50 +1,79 @@
-// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./LandingPageContent.css";
-import { useRef } from "react";
-// import landingPageWelcomeImg from '../../assets/images/landingPageWelcomeImg.svg'
+import SocialWelcome from "../../assets/images/SocialWelcome.png";
+import Footer from "../../Components/Footer/Footer";
+
 
 function LandingPageContent(): JSX.Element {
-//   const parallaxRef: any = useRef();
   return (
     <div className="LandingPageContent">
-      {/* <Parallax pages={3} ref={parallaxRef} style={{ top: 0, left: 0 }}>
-        <ParallaxLayer
-          offset={0}
-          speed={1}
-          factor={1}
-          onClick={() => parallaxRef.current.scrollTo(1)}
-        >
-          <div className="LandingPageWelcome">
-            <h1>Welcome to our thriving community</h1>
+      <div className="LandingPageWelcome">
+        <div className="LandingPageWelcomeHeader">
+          <h1>
+            Find your coding tribe and gain real-world experience with
+            DevConnect
+          </h1>
+          <p>
+            Join a community of passionate developers who are building amazing
+            open-source projects together.
+          </p>
+          {/* <button>Sign up for free</button> */}
+        </div>
 
-            <img src={landingPageWelcomeImg} alt="" />
-          </div>
-        </ParallaxLayer>
+        <div className="LandingPageWelcomeHeaderImg">
+          <img src={SocialWelcome} alt="" />
+        </div>
+      </div>
 
-        <ParallaxLayer
-          offset={1}
-          speed={0.5}
-          factor={1}
-          onClick={() => parallaxRef.current.scrollTo(2)}
-        >
-          <div className="LandingPageContentSection1">
-            <h2>Section 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </ParallaxLayer>
+      <div className="LandingPageFeatures">
+        <div className="FeatureSection">
+          <h2>Collaborate and Learn</h2>
+          <p>
+            Connect with other developers and collaborate on real-world coding
+            projects. Learn new skills and gain experience while working on
+            open-source projects.
+          </p>
+        </div>
 
-        <ParallaxLayer
-          offset={2}
-          speed={0.3}
-          factor={1}
-          onClick={() => parallaxRef.current.scrollTo(0)}
-        >
-          <div className="LandingPageContentSection2">
-            <h2>Section 2</h2>
-            <p>Nullam accumsan felis sit amet quam accumsan congue.</p>
-          </div>
-        </ParallaxLayer>
-      </Parallax> */}
+        <div className="FeatureSection">
+          <h2>Find Your Next Job</h2>
+          <p>
+            Browse job postings or project opportunities and find your next
+            coding gig. Apply for jobs or offer your services as a developer.
+          </p>
+        </div>
+
+        <div className="FeatureSection">
+          <h2>Connect With Your Community</h2>
+          <p>
+            Join a supportive community of developers who share your passion for
+            coding. Discuss coding challenges, ask for advice, and make lasting
+            connections.
+          </p>
+        </div>
+      </div>
+
+      <div className="LandingPageTestimonials">
+        <h2>What Our Users Say</h2>
+        <div className="TestimonialSection">
+          <p>
+            "I've been using DevConnect for a few months now and I've already
+            learned so much. It's amazing to be able to collaborate with other
+            developers and work on real-world projects together."
+          </p>
+          <p>- John Doe, Full Stack Developer</p>
+        </div>
+
+        <div className="TestimonialSection">
+          <p>
+            "As a beginner coder, I was hesitant to start working on real-world
+            projects. But with DevConnect, I was able to find a supportive
+            community and gain valuable experience in no time."
+          </p>
+          <p>- Jane Smith, Front-End Developer</p>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
