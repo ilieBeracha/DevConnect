@@ -5,6 +5,8 @@ import { useState } from "react";
 import collab from "../../assets/images/Collab.png";
 import community from "../../assets/images/Community.png";
 import learn from "../../assets/images/learnImage.png";
+import GoogleAuth from "../../Components/GoogleAuth/GoogleAuth";
+import { NavLink } from "react-router-dom";
 
 function LandingPageContent(): JSX.Element {
   const [featureNum, setFeatureNum] = useState(0);
@@ -21,6 +23,12 @@ function LandingPageContent(): JSX.Element {
             Join a community of passionate developers who are building amazing
             open-source projects together.
           </p>
+          <div className="LandingPageWelcomeLinks">
+            <GoogleAuth />
+            <NavLink to={'/registerpage'}>
+              Try for free
+            </NavLink>
+          </div>
         </div>
 
         <div className="LandingPageWelcomeHeaderImg">
@@ -31,10 +39,9 @@ function LandingPageContent(): JSX.Element {
       <div className="LandingPageFeatures">
         {featureNum === 0 ? (
           <div className="FeatureSection">
-                        <button onClick={() => setFeatureNum(1)}> next </button>
+            <button onClick={() => setFeatureNum(1)}> next </button>
 
             <div className="FeatureSectionMain">
-              
               <h2>Collaborate and Learn</h2>
               <p>
                 Connect with other developers and collaborate on real-world
@@ -43,7 +50,6 @@ function LandingPageContent(): JSX.Element {
               </p>
             </div>
             <div className="FeatureSectionImage">
-
               <img src={learn} alt="" />
             </div>
           </div>
