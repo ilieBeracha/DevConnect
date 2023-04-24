@@ -9,6 +9,7 @@ function LandingPage(): JSX.Element {
     return (
         <div className="LandingPage">
             <Header />
+            
 			<Routes>
                 <Route path="/" element={<LandingPageContent />}></Route>
                 <Route path="/loginpage" element={<LoginPage />}></Route>

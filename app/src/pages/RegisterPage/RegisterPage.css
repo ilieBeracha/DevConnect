@@ -16,9 +16,36 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 400px;
   max-width: 90%;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.labelInputDiv{
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.labelInputDiv {
   display: flex;
   flex-direction: column;
 }
@@ -28,25 +55,26 @@
   margin-bottom: 0.5rem;
 }
 
-.labelInputDiv input,.labelInputDiv select {
+.labelInputDiv input,
+.labelInputDiv select {
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1rem;
 }
 
-.RegisterPage form button{
-    background-color: var(--secColor);
-    color: white;
+.RegisterPage form button {
+  background-color: var(--secColor);
+  color: white;
 }
 
-.oathSecDiv{
+.oathSecDiv {
   width: 15%;
   height: 60%;
   background-color: var(--secColor);
+  /* background-color: #1E1E1E; */
   border-top-left-radius: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
