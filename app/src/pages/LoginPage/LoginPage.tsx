@@ -6,6 +6,7 @@ import { toastAlerts } from "../../helpers/toastAlerts";
 import { UserModel } from "../../models/UserModel";
 import { userService } from "../../services/UserService";
 import "./LoginPage.css";
+import { NavLink } from "react-router-dom";
 
 function LoginPage(): JSX.Element {
   const { register, handleSubmit } = useForm<UserModel>();
@@ -52,6 +53,7 @@ function LoginPage(): JSX.Element {
 
         <button>Submit</button>
         <GoogleAuth />
+        <NavLink to={'/registerpage'}>Dont have an account</NavLink>
       </form>
     </div>
   );

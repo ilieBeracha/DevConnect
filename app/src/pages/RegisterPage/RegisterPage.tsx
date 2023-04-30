@@ -6,6 +6,7 @@ import { loginRedux } from "../../app/authSlice";
 import { toastAlerts } from "../../helpers/toastAlerts";
 import "./RegisterPage.css";
 import GoogleAuth from "../../Components/GoogleAuth/GoogleAuth";
+import { NavLink } from "react-router-dom";
 
 function RegisterPage(): JSX.Element {
   const { register, handleSubmit } = useForm<UserModel>();
@@ -74,6 +75,7 @@ function RegisterPage(): JSX.Element {
 
         <button>Submit</button>
         <GoogleAuth />
+        <NavLink to={'/loginpage'}>Have an account</NavLink>
       </form>
     </div>
   );
